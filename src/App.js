@@ -3,9 +3,9 @@ import style from './style.css'
 import Currentweather from './Currentweather'
 import Extendedweather from './Extendedweather'
 import Uv from './Uv'
-// import Photo from './Photo'
-// import Calendar from './Calendar'
 import { Link, Route, BrowserRouter } from 'react-router-dom'
+import Col from 'react-bootstrap/Col';
+
 
 function App(props) {
   return(
@@ -13,10 +13,9 @@ function App(props) {
       <div>
         <nav>
           <ul>
-            <li><Link to="/">Weather</Link></li>
-            <li><Link to="/Extendedweather">Extended Weather</Link></li>
-            <li><Link to ="/Uv"> UV Forecast </Link></li>
-            {/* <Photo /> */}
+            <Col><Link to="/">Weather</Link></Col>
+            <Col><Link to="/Extendedweather">Extended Weather</Link></Col>
+            <Col><Link to ="/Uv"> UV Forecast </Link></Col>
           </ul>
         </nav>
         
