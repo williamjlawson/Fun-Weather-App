@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+This project was create for Code Louisville's JavaScript / React class. 
+It's a basic, but functional weather app, built using JavaScript and 
+React, that gets its data from the 
+OpenWeatherMap.org API. The app gives a current general weather 
+forecast, gives high and low temperatures for a five day period, and 
+also gives a UV forecast. The app includes the dates for the forecast as 
+well. Each of these functionalities has its own component. For the 
+weather forecast, the component weather.js. For the extended forecast, 
+the component extendedforecast.js. And for the UV forecast, the 
+component UV. 
+Users will need to register and get an API key from openweatherapp.org 
+in order to run the app. Add &appid="" to the end of each API call in 
+the project (there are three). Replace "" with your API key to run

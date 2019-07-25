@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import style from './style.css'
+import Currentweather from './Currentweather'
+import Extendedweather from './Extendedweather'
+import Uv from './Uv'
+// import Photo from './Photo'
+// import Calendar from './Calendar'
+import { Link, Route, BrowserRouter } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function App(props) {
+  return(
+    <BrowserRouter>
+      <div>
+        <nav>
+          <ul>
+            <li><Link to="/">Weather</Link></li>
+            <li><Link to="/Extendedweather">Extended Weather</Link></li>
+            <li><Link to ="/Uv"> UV Forecast </Link></li>
+            {/* <Photo /> */}
+          </ul>
+        </nav>
+        
+        <Route path='/' exact component={Currentweather}/>
+        <Route path='/extendedweather/' component={Extendedweather}/>
+        <Route path='/uv/' component={Uv}/>
+      </div>
+    </BrowserRouter>
+    )
+  }
 
-export default App;
+export default App
