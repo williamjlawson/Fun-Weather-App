@@ -1,7 +1,11 @@
+/* Elements Styling */
+
 body {
   background-color: #DBFCFF;
   background-size: cover;
   /* background-image: url("https://images.unsplash.com/photo-1496851295060-d128986fd19e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80") */
+  font: sans-serif;
+  font-family: Georgia, Arial, Helvetica, sans-serif; 
 }
 
 p {
@@ -10,41 +14,42 @@ p {
   color: #01C2D3;
 }
 
-/* li {
-  text-align: center;
-  list-style: none;
-  font-size: 20px;
-} */
-
+/* code for a horizontal nav bar */
 ul {
   display: flex;
   align-items: stretch; /* Default */
   justify-content: space-around;
   width: 100%;
-  background: #cacaca;
+  background: #DBFCFF;
   margin: 0;
   padding: 0;
+  font-size: 28px;
 }
 li {
   display: block;
   flex: 0 1 auto; /* Default */
   list-style-type: none;
-  background: #fafafa;
+  background: #DBFCFF;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* Class Styling */
 .header {
   text-align: center;
   color: #4AD1DC;
   font-size: 50px;
 }
 
+/* most of the divs on the app are centered, and most of the components are made up of divs */
 .div {
   text-align: center;
   font-size: 30px;
   color: #01C2D3;
   
 }
-
 .my-div {
   text-align: center;
   padding: 10px;
@@ -67,18 +72,31 @@ li {
 
 .city {
   font-size: 25px;
-  
 }
 
 .temp {
   font-size: 25px;
 }
 
+/* Media Queries */
+/* the code in the media comes into effect when the width of the screen is less than 600px (cell phones, some tablets, and small browser windows) */
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  /* li {
+  /* makes the nav bar vertical on small devices */
+  ul {
     display: block;
-  } */
+    align-items: stretch; /* Default */
+    justify-content: space-around;
+    width: 100%;
+    background: #DBFCFF;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+  li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    background: #DBFCFF;
+  }
 }

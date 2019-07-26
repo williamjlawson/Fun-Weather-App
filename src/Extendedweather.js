@@ -7,6 +7,7 @@ class Extendedweather extends Component {
         super()
         this.state =  {}}
 
+     // the API call for the component
     async componentDidMount() {
         const res = await fetch("https://api.openweathermap.org/data/2.5/forecast?zip=40206&units=imperial")
         const json = await res.json()
@@ -28,6 +29,7 @@ class Extendedweather extends Component {
         console.log(this.state)
         return(
             <div>
+            {/* the data called from the array fetched from the API is here */}
              {/* .dt is how I got the date. Moment and format are for formatting the date. It's multiplied by  */}
              {/* [2],[10],[18],[26],[34] are at 6am. [6],[14],[22],[30].[38] are at 6pm.  */}
                 <h1 className="header">Extended Weather: Louisville</h1>
