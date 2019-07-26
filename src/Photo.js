@@ -8,7 +8,7 @@
 //     }
 
 //     async componentDidMount() {
-//         const res = await fetch("https://api.unsplash.com/photos/si5FhVodQW8&appid=2c8899adcc4c2629398918d3b3baa1e69e2b467a45fce59795b63976b09eb930")
+//         const res = await fetch("https://api.unsplash.com/photos/si5FhVodQW8&")
 //         const json = await res.json()
 //         console.log(json)
 //         this.setState({ photo: json })

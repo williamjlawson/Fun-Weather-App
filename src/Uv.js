@@ -10,7 +10,7 @@ class Uv extends Component {
     }
 
     async componentDidMount() {
-        const res = await fetch("https://api.openweathermap.org/data/2.5/uvi/forecast?lat=38.2527&lon=-85.7585&appid=5a143c33d3f1c41a6b7d7d1da8ce6de2")
+        const res = await fetch("https://api.openweathermap.org/data/2.5/uvi/forecast?lat=38.2527&lon=-85.7585")
         const json = await res.json()
         console.log(json)
         this.setState({ uv: json })

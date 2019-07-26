@@ -8,7 +8,7 @@ class Extendedweather extends Component {
         this.state =  {}}
 
     async componentDidMount() {
-        const res = await fetch("https://api.openweathermap.org/data/2.5/forecast?zip=40206&units=imperial&appid=5a143c33d3f1c41a6b7d7d1da8ce6de2")
+        const res = await fetch("https://api.openweathermap.org/data/2.5/forecast?zip=40206&units=imperial")
         const json = await res.json()
         console.log(json)
         this.setState({ forecast: json })
